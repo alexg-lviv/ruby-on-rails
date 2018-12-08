@@ -17,6 +17,7 @@ group :production do
 end
 gem 'rb-readline'
 gem 'devise'
+gem 'gravtastic'
 gem 'activeadmin', github: 'activeadmin'
 gem 'inherited_resources', github: 'activeadmin/inherited_resources'
 gem 'devise'
