@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :comments
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   devise_for :users
   get 'pages/info'
   resources :ideas

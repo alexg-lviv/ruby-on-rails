@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Ideas</h1>
-
+<h2>ideas counter : <%=@ideas[:count]%></h2>
 <table>
   <thead>
     <tr>
@@ -13,7 +13,7 @@
   </thead>
 
   <tbody>
-    <% @ideas.each do |idea| %>
+    <% @ideas[:ideas].each do |idea| %>
       <tr>
         <td><%= idea.name %></td>
         <td><%= idea.description %></td>
